@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retina Clinic — Especializada no tratamento da Retina e Vítreo</title>
+<meta name="description" content="Clínica oftalmológica especializada no tratamento, acompanhamento e prevenção das doenças que afetam a retina e o vítreo. Mais de 20 anos de experiência em São Paulo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FAF6EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231B2340'/%3E%3Cpath d='M4 12s3-5 8-5 8 5 8 5-3 5-8 5-8-5-8-5Z' fill='none' stroke='%233BB4A1' stroke-width='1.6'/%3E%3Ccircle cx='12' cy='12' r='2.2' fill='%233BB4A1'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cms.retina.pro.br">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#topo" aria-label="Retina Clinic — página inicial">
+        <img src="assets/img/logo-retina.png"
+             alt="Retina Clinic" width="190" height="38">
+      </a>
+
+      <nav class="nav__menu" aria-label="Navegação principal">
+        <a class="nav__link" href="#especialidades">Especialidades</a>
+        <a class="nav__link" href="#diagnostico">Centro Diagnóstico</a>
+        <a class="nav__link" href="#equipe">Equipe</a>
+        <a class="nav__link" href="#kids">Retina Kids</a>
+        <a class="nav__link" href="#unidades">Unidades</a>
+        <a class="nav__link" href="#blog">Blog</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="nav__phone" href="tel:+551140047821">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+          (11) 4004-7821
+        </a>
+        <a class="btn" href="#contato" data-magnet>
+          Agendar consulta
+          <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="drawer" aria-label="Abrir menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= DRAWER MÓVEL ================= -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu de navegação" data-open="false">
+  <div class="container">
+    <div class="drawer__head">
+      <img src="assets/img/logo-retina.png"
+           alt="Retina Clinic" width="170" height="34">
+      <button class="nav__toggle" id="drawerClose" type="button" aria-label="Fechar menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="drawer__list" aria-label="Navegação móvel">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#doencas">Doenças</a>
+      <a href="#diagnostico">Centro Diagnóstico</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#kids">Retina Kids</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#blog">Blog</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="drawer__foot">
+      <a class="btn" href="#contato">
+        Agendar consulta
+        <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="tel:+551140047821">(11) 4004-7821</a>
+    </div>
+  </div>
+</div>
+
+<main id="conteudo">
+<span id="topo"></span>
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero">
+  <div class="grainient" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__grid">
+      <div>
+        <p class="hero__badge"><b>100 ANOS</b> de endosso · mais de 20 anos de especialidade</p>
+
+        <h1 class="h1" id="heroTitle">
+          <span class="split__line" style="--i:0"><span>Especialistas em</span></span>
+          <span class="split__line" style="--i:1"><span><em class="kw" style="font-style:normal">retina</em>, dedicados</span></span>
+          <span class="split__line" style="--i:2"><span>a você</span></span>
+        </h1>
+
+        <p class="lead">
+          A Retina Clinic é uma clínica oftalmológica especializada no tratamento,
+          acompanhamento e prevenção das doenças que afetam a retina e o vítreo.
+          Nossa equipe utiliza a mais avançada tecnologia diagnóstica e terapêutica
+          para oferecer o melhor cuidado aos nossos pacientes.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn" href="#contato" data-magnet>
+            Agendar consulta
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#especialidades">Nossas especialidades</a>
+        </div>
+
+        <div class="hero__stats reveal">
+          <div class="hero__stat" style="--i:0">
+            <p class="n"><span data-count="14" data-suffix="">0</span></p>
+            <p class="meta">Médicos especialistas</p>
+          </div>
+          <div class="hero__stat" style="--i:1">
+            <p class="n"><span data-count="25" data-suffix="+">0</span></p>
+            <p class="meta">Exames diagnósticos</p>
+          </div>
+          <div class="hero__stat" style="--i:2">
+            <p class="n"><span data-count="2" data-suffix="">0</span></p>
+            <p class="meta">Unidades em São Paulo</p>
+          </div>
+        </div>
+      </div>
+
+      <figure class="hero__media glare">
+        <img src="https://cms.retina.pro.br/uploads/generica_4_1_65b27a74d2.jpg"
+             alt="Médica oftalmologista da Retina Clinic examinando o fundo de olho de um paciente"
+             width="1333" height="1066" fetchpriority="high" decoding="async">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. SOBRE ================= -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="split split--wide-media">
+      <div class="split__text">
+        <div class="section__head float-in">
+          <p class="eyebrow">Cuidando da sua visão</p>
+          <h2 class="h2">Serviços de qualidade para sua saúde ocular</h2>
+        </div>
+        <div class="reveal stack">
+          <p class="body" style="--i:0">
+            A Retina Clinic é uma clínica oftalmológica especializada no tratamento,
+            acompanhamento e prevenção das doenças que acometem a retina e o vítreo.
+            Com mais de 20 anos de experiência, estamos comprometidos em oferecer aos
+            nossos pacientes a mais avançada tecnologia diagnóstica e terapêutica,
+            visando sempre a excelência no cuidado com a visão.
+          </p>
+          <p class="body" style="--i:1">
+            Nossa missão é oferecer o mais avançado diagnóstico e tratamento,
+            proporcionando uma visão saudável e de qualidade.
+          </p>
+          <div class="btn-row" style="--i:2;margin-top:var(--sp-5)">
+            <a class="btn btn--ghost" href="#equipe">Conheça nossa equipe médica</a>
+          </div>
+        </div>
+      </div>
+
+      <figure class="split__media" style="border-radius:24px;overflow:hidden">
+        <img class="parallax" data-parallax="0.05"
+             src="https://cms.retina.pro.br/uploads/Fundoscopia_3_21744735d9.jpg"
+             alt="Exame de fundoscopia sendo realizado em uma das unidades da Retina Clinic"
+             width="1200" height="800" loading="lazy" decoding="async"
+             style="width:100%;aspect-ratio:4/3;object-fit:cover">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. DIFERENCIAIS (bloco escuro) ================= -->
+<section class="section" style="padding-top:0">
+  <div class="container--wide" style="margin-inline:auto">
+    <div class="block block--dark on-dark">
+      <div class="section__head float-in" style="max-width:52ch">
+        <p class="eyebrow">Diferenciais da Retina Clinic</p>
+        <h2 class="h2">Tratamento especializado para doenças da retina e vítreo</h2>
+        <p class="lead" style="margin-top:var(--sp-4)">
+          Equipe altamente qualificada, tecnologia de ponta e um plano de cuidado
+          construído para cada paciente.
+        </p>
+      </div>
+
+      <div class="grid grid--cards reveal">
+        <article class="card card--spot" style="--i:0">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <h3 class="h3">Acompanhamento profissional para problemas oculares</h3>
+          <p>
+            Diagnóstico e tratamento de doenças da retina e vítreo, como degeneração
+            macular, retinopatia diabética e descolamento de retina.
+          </p>
+          <p style="margin-top:auto;padding-top:var(--sp-4)">
+            <a class="link card__link" href="#especialidades">Nossas especialidades</a>
+          </p>
+        </article>
+
+        <article class="card card--spot" style="--i:1">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3 class="h3">Prevenção de doenças oculares com tecnologia avançada</h3>
+          <p>
+            Exames oftalmológicos completos para identificar precocemente problemas
+            na retina e no vítreo.
+          </p>
+          <p style="margin-top:auto;padding-top:var(--sp-4)">
+            <a class="link card__link" href="#diagnostico">Centro Diagnóstico</a>
+          </p>
+        </article>
+
+        <article class="card card--spot" style="--i:2">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+          </span>
+          <h3 class="h3">Tratamento personalizado para cada paciente</h3>
+          <p>
+            Nossa equipe de especialistas desenvolve planos de tratamento
+            individualizados, visando o melhor resultado para cada paciente.
+          </p>
+          <p style="margin-top:auto;padding-top:var(--sp-4)">
+            <a class="link card__link" href="#kids">Conheça o Retina Kids</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. ESPECIALIDADES ================= -->
+<section class="section" id="especialidades">
+  <div class="container">
+    <div class="section__head center float-in" style="max-width:60ch">
+      <p class="eyebrow">Cirurgias e tratamentos</p>
+      <h2 class="h2">Conheça nossos serviços especializados</h2>
+      <p class="lead">
+        A Retina Clinic é especializada no diagnóstico e tratamento de doenças que
+        acometem a retina, o vítreo e a mácula — estruturas essenciais para a visão.
+      </p>
+    </div>
+
+    <div class="grid grid--cards reveal">
+      <article class="card card--spot" style="--i:0">
+        <span class="card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <h3 class="h3">Cirurgia endoscópica</h3>
+        <p>Abordagem minimamente invasiva com visualização endoscópica intraocular.</p>
+      </article>
+      <article class="card card--spot" style="--i:1">
+        <span class="card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m19 3-6 6M14 3h6v6"/><path d="m5 21 8-8"/><circle cx="4" cy="20" r="2"/></svg></span>
+        <h3 class="h3">Injeção intravítrea</h3>
+        <p>Aplicação de antiangiogênicos e corticoides diretamente na cavidade vítrea.</p>
+      </article>
+      <article class="card card--spot" style="--i:2">
+        <span class="card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3 class="h3">Laserterapia</h3>
+        <p>Fotocoagulação para tratar e prevenir complicações de diversas doenças retinianas.</p>
+      </article>
+      <article class="card card--spot" style="--i:3">
+        <span class="card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/><path d="M3 12a9 9 0 0 0 9 9"/><path d="m16 16 5 5"/></svg></span>
+        <h3 class="h3">Retinopexia com introflexão</h3>
+        <p>Técnica cirúrgica para reaplicação da retina em casos de descolamento.</p>
+      </article>
+      <article class="card card--spot" style="--i:4">
+        <span class="card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span>
+        <h3 class="h3">Terapia fotodinâmica</h3>
+        <p>Tratamento com fotossensibilizante ativado por laser de baixa energia.</p>
+      </article>
+      <article class="card card--spot" style="--i:5">
+        <span class="card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 1-8-8"/><path d="M20 3v6h-6"/></svg></span>
+        <h3 class="h3">Vitrectomia posterior</h3>
+        <p>Remoção do vítreo para tratar hemorragias, membranas e descolamentos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. DOENÇAS (marquee) ================= -->
+<section class="section" id="doencas" style="padding-top:0">
+  <div class="container">
+    <div class="section__head float-in" style="max-width:56ch">
+      <p class="eyebrow">Doenças que tratamos</p>
+      <h2 class="h2">A retina e o vítreo, em toda a sua complexidade</h2>
+      <p class="lead">
+        Alterações nessas estruturas podem causar perda parcial ou total da visão.
+        Estas são as principais condições acompanhadas pela nossa equipe.
+      </p>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Lista de doenças tratadas pela Retina Clinic">
+    <div class="marquee__track">
+      <a class="chip" href="#contato">Buraco de mácula</a>
+      <a class="chip" href="#contato">Catarata</a>
+      <a class="chip" href="#contato">Degeneração de mácula</a>
+      <a class="chip" href="#contato">Descolamento de retina</a>
+      <a class="chip" href="#contato">Descolamento do vítreo posterior</a>
+      <a class="chip" href="#contato">Glaucoma</a>
+      <a class="chip" href="#contato">Glaucoma congênito</a>
+      <a class="chip" href="#contato">Membrana epirretiniana</a>
+      <a class="chip" href="#contato">Moscas volantes</a>
+      <!-- duplicata para o laço contínuo -->
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Buraco de mácula</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Catarata</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Degeneração de mácula</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Descolamento de retina</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Descolamento do vítreo posterior</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Glaucoma</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Glaucoma congênito</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Membrana epirretiniana</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Moscas volantes</a>
+    </div>
+    <div class="marquee__track">
+      <a class="chip" href="#contato">Oclusão da veia central</a>
+      <a class="chip" href="#contato">Oclusão de ramo arterial</a>
+      <a class="chip" href="#contato">Oclusão de ramo venoso</a>
+      <a class="chip" href="#contato">Retinoblastoma</a>
+      <a class="chip" href="#contato">Retinopatia da Prematuridade (ROP)</a>
+      <a class="chip" href="#contato">Retinopatia diabética</a>
+      <a class="chip" href="#contato">Retinopatia hipertensiva</a>
+      <a class="chip" href="#contato">Retinopatia serosa central</a>
+      <a class="chip" href="#contato">Rotura retiniana</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Oclusão da veia central</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Oclusão de ramo arterial</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Oclusão de ramo venoso</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Retinoblastoma</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Retinopatia da Prematuridade (ROP)</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Retinopatia diabética</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Retinopatia hipertensiva</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Retinopatia serosa central</a>
+      <a class="chip" href="#contato" aria-hidden="true" tabindex="-1">Rotura retiniana</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. CENTRO DIAGNÓSTICO ================= -->
+<section class="section" id="diagnostico">
+  <div class="container">
+    <div class="split">
+      <div class="split__text">
+        <div class="section__head float-in">
+          <p class="eyebrow">Centro Diagnóstico</p>
+          <h2 class="h2">Tecnologia que enxerga antes do sintoma</h2>
+        </div>
+        <div class="reveal stack">
+          <p class="body" style="--i:0">
+            O Centro de Diagnóstico da Retina Clinic oferece atendimento especializado
+            para doenças da retina, mácula e vítreo. Com uma equipe qualificada,
+            tecnologia avançada e protocolos modernos, o foco é preservar a visão e
+            apoiar o tratamento dos pacientes.
+          </p>
+          <div class="chip-set" style="--i:1">
+            <span class="chip">OCT Tomografia</span>
+            <span class="chip">OCT Angiography</span>
+            <span class="chip">Angiografia panorâmica</span>
+            <span class="chip">Retinografia Optos / Califórnia</span>
+            <span class="chip">Eletrofisiologia</span>
+            <span class="chip">Microperimetria</span>
+            <span class="chip">Indocianina verde</span>
+            <span class="chip">Ultrassom A e B</span>
+            <span class="chip">Mapeamento da retina</span>
+            <span class="chip">Gonioscopia digital</span>
+            <span class="chip">Biometria ocular</span>
+            <span class="chip">Topografia Pentacam AXL</span>
+            <span class="chip">Perimetria estática e dinâmica</span>
+            <span class="chip">Visão subnormal</span>
+          </div>
+          <p class="meta" style="--i:2">E mais de 25 exames disponíveis nas duas unidades.</p>
+        </div>
+      </div>
+
+      <figure class="split__media" style="border-radius:24px;overflow:hidden">
+        <img class="parallax" data-parallax="0.04"
+             src="https://cms.retina.pro.br/uploads/Curva_Tensional_Diaria_2_bfcf505838.jpg"
+             alt="Equipamento de diagnóstico por imagem em uso no Centro Diagnóstico da Retina Clinic"
+             width="1000" height="750" loading="lazy" decoding="async"
+             style="width:100%;aspect-ratio:4/3;object-fit:cover">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. EQUIPE ================= -->
+<section class="section" id="equipe" style="padding-top:0">
+  <div class="container">
+    <div class="section__head center float-in" style="max-width:56ch">
+      <p class="eyebrow">Nossa equipe</p>
+      <h2 class="h2">Conheça nossa equipe médica</h2>
+      <p class="lead">
+        Cada profissional é especialista em doenças da retina, garantindo tratamentos
+        eficazes e inovadores.
+      </p>
+    </div>
+
+    <div class="grid grid--docs reveal">
+      <article class="doctor" style="--i:0">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Andre_Maia_CRM_77_307_RQE_N_40_948_446ec54956.jpg" alt="Dr. André Correia Maia de Carvalho" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">André Correia Maia de Carvalho</h3><p class="doctor__crm">CRM-SP 77307 · RQE 40948</p><p class="doctor__spec">Retina e Vítreo</p></div>
+      </article>
+      <article class="doctor" style="--i:1">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Bruno_Massih_de_Oliveira_CRM_22_1509_RQE_N_127333_8a8b4595f5.jpg" alt="Dr. Bruno Massih de Oliveira" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Bruno Massih de Oliveira</h3><p class="doctor__crm">CRM-SP 221509 · RQE 127333</p><p class="doctor__spec">Uveítes e Oncologia Ocular</p></div>
+      </article>
+      <article class="doctor" style="--i:2">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dra_Carolina_Hilgert_CRM_254287_RQE_N_128378_1_fa9a208c4a.jpg" alt="Dra. Carolina Hilgert" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Carolina Hilgert</h3><p class="doctor__crm">CRM-SP 254287</p><p class="doctor__spec">Retina e Cirurgia</p></div>
+      </article>
+      <article class="doctor" style="--i:3">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dra_Claudia_Correia_CRM_90577_RQE_N_40960_1_1c2fff9b21.jpg" alt="Dra. Claudia Correia" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Claudia Correia</h3><p class="doctor__crm">CRM-SP 90577 · RQE 40960</p><p class="doctor__spec">Retina, Vítreo e Oftalmologia Geral</p></div>
+      </article>
+      <article class="doctor" style="--i:4">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dr_Felipe_Medeiros_CRM_203817_RQE_N_102592_4924e1c20a.jpg" alt="Dr. Felipe Beltrão de Medeiros" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Felipe Beltrão de Medeiros</h3><p class="doctor__crm">CRM-SP 203817 · RQE 102592</p><p class="doctor__spec">Retina e Vítreo</p></div>
+      </article>
+      <article class="doctor" style="--i:5">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dr_Francisco_Stefanini_CRM_128920_RQE_N_36750_00e325f69a.jpg" alt="Dr. Francisco Rosa Stefanini" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Francisco Rosa Stefanini</h3><p class="doctor__crm">CRM-SP 128920 · RQE 36750</p><p class="doctor__spec">Retina, Vítreo e Mácula</p></div>
+      </article>
+      <article class="doctor" style="--i:6">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dr_Gabriel_Andrade_CRM_135564_RQE_N_65627_669ee349b9.jpg" alt="Dr. Gabriel Costa de Andrade" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Gabriel Costa de Andrade</h3><p class="doctor__crm">CRM-SP 135564 · RQE 65627</p><p class="doctor__spec">Retina e Mácula</p></div>
+      </article>
+      <article class="doctor" style="--i:7">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dr_Huber_Vasconcelos_CRM_147179_RQE_N_83836_cf4275d820.jpg" alt="Dr. Huber Martins Vasconcelos Júnior" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Huber Martins Vasconcelos Júnior</h3><p class="doctor__crm">CRM-SP 147179 · RQE 83836</p><p class="doctor__spec">Genética ocular, Eletrofisiologia, Retina e Vítreo</p></div>
+      </article>
+      <article class="doctor" style="--i:8">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dr_John_Cho_CRM_192984_RQE_N_92471_8d2d017b6a.jpg" alt="Dr. John Chi Chao" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">John Chi Chao</h3><p class="doctor__crm">CRM-SP 192984 · RQE 92471</p><p class="doctor__spec">Retina, Vítreo e Neuroftalmologia</p></div>
+      </article>
+      <article class="doctor" style="--i:9">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dra_Nilva_Moraes_CRM_49961_RQE_N_118359_e68c9ba4d4.jpg" alt="Dra. Nilva Moraes" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Nilva Moraes</h3><p class="doctor__crm">CRM-SP 49961 · RQE 118359</p><p class="doctor__spec">Retina, Vítreo, Retina Infantil e ROP</p></div>
+      </article>
+      <article class="doctor" style="--i:10">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dra_Patricia_Miyasato_CRM_91668_RQE_N_40278_4de1d21802.jpg" alt="Dra. Patricia Yuri Miyasato" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Patricia Yuri Miyasato</h3><p class="doctor__crm">CRM-SP 91668 · RQE 40278</p><p class="doctor__spec">Reabilitação Visual</p></div>
+      </article>
+      <article class="doctor" style="--i:11">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Ricardo_Okada_002_2_1aa366e610.jpg" alt="Dr. Ricardo Okada Nakaghi" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Ricardo Okada Nakaghi</h3><p class="doctor__crm">CRM-SP 176105 · RQE 84963</p><p class="doctor__spec">Retina e Vítreo</p></div>
+      </article>
+      <article class="doctor" style="--i:12">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Dr_Victor_Berton_CRM_218256_RQE_N_126858_1_e8a1c2bef2.jpg" alt="Dr. Victor Berton" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Victor Berton</h3><p class="doctor__crm">CRM-SP 218256 · RQE 126858</p><p class="doctor__spec">Retina e Vítreo</p></div>
+      </article>
+      <article class="doctor" style="--i:13">
+        <div class="doctor__media"><img src="https://cms.retina.pro.br/uploads/Equipe_Medica_e8cf317c3f.jpg" alt="Equipe médica da Retina Clinic reunida" width="400" height="500" loading="lazy" decoding="async"></div>
+        <div class="doctor__body"><h3 class="doctor__name">Rodrigo Hideharo Sato</h3><p class="doctor__crm">CRM-SP 168535 · RQE 80427</p><p class="doctor__spec">Reabilitação Visual e Biofeedback</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. RETINA KIDS (bloco creme) ================= -->
+<section class="section" id="kids" style="padding-top:0">
+  <div class="container--wide" style="margin-inline:auto">
+    <div class="block block--warm">
+      <div class="split">
+        <div class="split__text">
+          <div class="section__head float-in">
+            <p class="eyebrow">Retina Kids</p>
+            <h2 class="h2">Cuidando da visão das crianças</h2>
+          </div>
+          <div class="reveal stack">
+            <p class="body" style="--i:0">
+              O Retina Kids é um serviço especializado na avaliação e tratamento de
+              crianças com alterações oculares, especialmente relacionadas à retina.
+              Reconhecendo as particularidades anatômicas e comportamentais dos pacientes
+              pediátricos, oferecemos uma abordagem abrangente em ambiente ambulatorial
+              ou hospitalar, conforme a necessidade de cada criança.
+            </p>
+            <ul class="stack" style="--i:1">
+              <li class="h4">Diagnóstico precoce de doenças da retina em crianças</li>
+              <li class="h4">Estrutura física segura e ambiente acolhedor</li>
+              <li class="h4">Sedação ou anestesia definida caso a caso, com foco em segurança</li>
+            </ul>
+            <div class="btn-row" style="--i:2;margin-top:var(--sp-5)">
+              <a class="btn" href="#contato" data-magnet>
+                Falar sobre o Retina Kids
+                <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <figure class="split__media glare" style="border-radius:24px;overflow:hidden">
+          <img src="https://cms.retina.pro.br/uploads/Retina_Kids_1_3c12b3c1da.jpg"
+               alt="Criança sendo atendida no serviço Retina Kids da Retina Clinic"
+               width="1200" height="900" loading="lazy" decoding="async"
+               style="width:100%;aspect-ratio:4/3;object-fit:cover">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. UNIDADES (bloco escuro) ================= -->
+<section class="section" id="unidades" style="padding-top:0">
+  <div class="container--wide" style="margin-inline:auto">
+    <div class="block block--dark on-dark">
+      <div class="section__head float-in" style="max-width:50ch">
+        <p class="eyebrow">Unidades</p>
+        <h2 class="h2">Encontre a unidade mais próxima de você</h2>
+      </div>
+
+      <div class="grid units-grid reveal">
+        <article class="unit glare" style="--i:0">
+          <div class="unit__media">
+            <img src="https://cms.retina.pro.br/uploads/d183d3883175b2590814e6c5fadba1d9_f70b7d24e6.png"
+                 alt="Fachada da Unidade Estados Unidos da Retina Clinic"
+                 width="1200" height="750" loading="lazy" decoding="async">
+          </div>
+          <div class="unit__body">
+            <h3 class="h3">Unidade Estados Unidos</h3>
+            <p class="unit__row">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Rua Estados Unidos, 1881 — São Paulo, SP · 01427-002
+            </p>
+            <p class="unit__row">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+              <a class="link" href="tel:+551140047821">(11) 4004-7821</a>
+            </p>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Rua+Estados+Unidos+1881+São+Paulo" target="_blank" rel="noopener">
+              Ver rota
+              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="unit glare" style="--i:1">
+          <div class="unit__media">
+            <img src="https://cms.retina.pro.br/uploads/Whats_App_Image_2025_11_07_at_1_24_14_PM_152fd7e676.jpeg"
+                 alt="Recepção da Unidade Gabriel da Retina Clinic"
+                 width="1200" height="750" loading="lazy" decoding="async">
+          </div>
+          <div class="unit__body">
+            <h3 class="h3">Unidade Gabriel</h3>
+            <p class="unit__row">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Al. Gabriel Monteiro da Silva, 987 — São Paulo, SP · 01442-000
+            </p>
+            <p class="unit__row">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+              <a class="link" href="tel:+551140047821">(11) 4004-7821</a>
+            </p>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Alameda+Gabriel+Monteiro+da+Silva+987+São+Paulo" target="_blank" rel="noopener">
+              Ver rota
+              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="stats" style="margin-top:var(--sp-8)">
+        <div class="stat">
+          <p class="stat__num"><span data-count="20" data-suffix="+">0</span></p>
+          <p class="h4">Anos de experiência em retina e vítreo</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num"><span data-count="14" data-suffix="">0</span></p>
+          <p class="h4">Médicos especialistas na equipe</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num"><span data-count="25" data-suffix="+">0</span></p>
+          <p class="h4">Exames no Centro Diagnóstico</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10. BLOG ================= -->
+<section class="section" id="blog" style="padding-top:0">
+  <div class="container">
+    <div class="section__head center float-in" style="max-width:52ch">
+      <p class="eyebrow">Conteúdo</p>
+      <h2 class="h2">Descubra nosso blog</h2>
+      <p class="lead">Leia os principais conteúdos produzidos pela nossa equipe médica.</p>
+    </div>
+
+    <div class="grid grid--cards reveal">
+      <article class="card" style="--i:0">
+        <div class="post__media">
+          <img src="https://cms.retina.pro.br/uploads/Generica_4_73dd0b0553.jpg"
+               alt="Ilustração do artigo sobre angiografia panorâmica com fluoresceína sódica"
+               width="1126" height="704" loading="lazy" decoding="async">
+        </div>
+        <div class="post__tags"><span class="tag">Exames</span><span class="meta">Leitura de 5 min</span></div>
+        <h3 class="h3">
+          <a class="card__link" href="https://retina.pro.br/blog/angiografia-panoramica-com-fluoresceina-sodica-como-esse-exame-oftalmologico-e-feito" target="_blank" rel="noopener">
+            Angiografia panorâmica com fluoresceína sódica: como esse exame é feito?
+          </a>
+        </h3>
+      </article>
+
+      <article class="card" style="--i:1">
+        <div class="post__media">
+          <img src="https://cms.retina.pro.br/uploads/Biometria_dcd7d74ca7.jpg"
+               alt="Ilustração do artigo sobre o exame de biometria ocular"
+               width="1478" height="924" loading="lazy" decoding="async">
+        </div>
+        <div class="post__tags"><span class="tag">Oftalmologia</span><span class="meta">Leitura de 5 min</span></div>
+        <h3 class="h3">
+          <a class="card__link" href="https://retina.pro.br/blog/biometria-para-que-serve-e-como-e-feito-este-exame-oftalmologico" target="_blank" rel="noopener">
+            Biometria: para que serve e como é feito este exame oftalmológico?
+          </a>
+        </h3>
+      </article>
+
+      <article class="card" style="--i:2">
+        <div class="post__media">
+          <img src="https://cms.retina.pro.br/uploads/shutterstock_2274924441_515bc626cc.jpg"
+               alt="Ilustração do artigo sobre descolamento de retina"
+               width="1200" height="750" loading="lazy" decoding="async">
+        </div>
+        <div class="post__tags"><span class="tag">Retina</span><span class="meta">Leitura de 5 min</span></div>
+        <h3 class="h3">
+          <a class="card__link" href="https://retina.pro.br/blog/descolamento-de-retina" target="_blank" rel="noopener">
+            Descolamento de retina: sinais de alerta e quando procurar ajuda
+          </a>
+        </h3>
+      </article>
+    </div>
+
+    <p class="center" style="margin-top:var(--sp-7)">
+      <a class="btn btn--ghost" href="https://retina.pro.br/blog" target="_blank" rel="noopener">Ver mais artigos</a>
+    </p>
+  </div>
+</section>
+
+<!-- ================= 11. CONTATO + FAQ ================= -->
+<section class="section" id="contato" style="padding-top:0">
+  <div class="container">
+    <div class="grid contact-grid" style="gap:clamp(2rem,5vw,4rem)">
+      <div>
+        <div class="section__head float-in">
+          <p class="eyebrow">Dúvidas</p>
+          <h2 class="h2">Perguntas frequentes</h2>
+        </div>
+        <div class="acc">
+          <h3><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc1">
+            Como agendar uma consulta?
+            <svg class="acc__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button></h3>
+          <div class="acc__panel" id="acc1"><div><p>
+            Você pode agendar pelo telefone <a class="link" href="tel:+551140047821">(11) 4004-7821</a>,
+            por WhatsApp no mesmo número, ou preenchendo o formulário ao lado.
+            Nossa equipe retorna o contato para confirmar data, unidade e orientações de preparo.
+          </p></div></div>
+
+          <h3><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc2">
+            Como chegar nas unidades?
+            <svg class="acc__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button></h3>
+          <div class="acc__panel" id="acc2"><div><p>
+            A Unidade Estados Unidos fica na Rua Estados Unidos, 1881, e a Unidade Gabriel
+            na Al. Gabriel Monteiro da Silva, 987, ambas em São Paulo.
+            Use o botão “Ver rota” na seção <a class="link" href="#unidades">Unidades</a>
+            para abrir o trajeto no mapa.
+          </p></div></div>
+
+          <h3><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc3">
+            A clínica atende crianças?
+            <svg class="acc__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button></h3>
+          <div class="acc__panel" id="acc3"><div><p>
+            Sim. O <a class="link" href="#kids">Retina Kids</a> é o serviço dedicado a crianças
+            e bebês, com estrutura física segura, profissionais capacitados e equipamentos
+            adequados ao atendimento pediátrico.
+          </p></div></div>
+
+          <h3><button class="acc__trigger" type="button" aria-expanded="false" aria-controls="acc4">
+            Existe atendimento domiciliar?
+            <svg class="acc__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button></h3>
+          <div class="acc__panel" id="acc4"><div><p>
+            Sim, a Retina Clinic oferece atendimento domiciliar para pacientes com
+            mobilidade reduzida. Entre em contato para verificar disponibilidade e
+            condições para a sua região.
+          </p></div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section__head float-in">
+          <p class="eyebrow">Fale conosco</p>
+          <h2 class="h2">Preencha o formulário</h2>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label class="field__label" for="nome">Nome</label>
+            <input class="field__input" id="nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome completo">
+          </div>
+          <div class="field">
+            <label class="field__label" for="email">E-mail</label>
+            <input class="field__input" id="email" name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com">
+          </div>
+          <div class="field">
+            <label class="field__label" for="tel">Telefone</label>
+            <input class="field__input" id="tel" name="tel" type="tel" autocomplete="tel" required placeholder="(11) 90000-0000">
+          </div>
+          <div class="field">
+            <label class="field__label" for="msg">Mensagem</label>
+            <textarea class="field__input" id="msg" name="msg" required placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <label class="check">
+            <input type="checkbox" id="termos" name="termos" required>
+            <span>Aceito os termos e a <a class="link" href="https://retina.pro.br/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
+          </label>
+          <p class="btn-row">
+            <button class="btn" type="submit" data-magnet>
+              Enviar
+              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </p>
+          <p class="micro" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12. CTA FINAL ================= -->
+<section class="section" style="padding-top:0">
+  <div class="container--wide" style="margin-inline:auto">
+    <div class="cta on-dark">
+      <div class="cta__inner">
+        <p class="eyebrow" style="margin-bottom:var(--sp-5)">Agendamento</p>
+        <h2 class="h2 float-in">Agende sua consulta conosco hoje</h2>
+        <p class="lead" style="margin-top:var(--sp-4)">
+          Entre em contato para mais informações sobre nossos serviços, exames e unidades.
+        </p>
+        <div class="btn-row" style="margin-top:var(--sp-6)">
+          <a class="btn" href="https://wa.me/551140047821" target="_blank" rel="noopener" data-magnet>
+            Agendar pelo WhatsApp
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="tel:+551140047821">(11) 4004-7821</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <img src="assets/img/logo-retina.png"
+             alt="Retina Clinic" width="190" height="38" loading="lazy" decoding="async"
+             style="filter:brightness(0) invert(1);margin-bottom:var(--sp-4)">
+        <p class="meta" style="color:var(--text-inverse-mut);max-width:38ch">
+          Clínica oftalmológica especializada no tratamento, acompanhamento e prevenção
+          das doenças da retina e do vítreo.
+        </p>
+        <h3 style="margin-top:var(--sp-5)">Perfis oficiais</h3>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/retina.com.br/" target="_blank" rel="noopener" aria-label="Facebook da Retina Clinic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/retina.clinic/" target="_blank" rel="noopener" aria-label="Instagram da Retina Clinic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@retinaclinic" target="_blank" rel="noopener" aria-label="YouTube da Retina Clinic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7c-.2-.8-.9-1.5-1.7-1.7C18.4 5.2 12 5.2 12 5.2s-6.4 0-7.9.4c-.8.2-1.5.9-1.7 1.7C2 8.8 2 12 2 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 7.9.4 7.9.4s6.4 0 7.9-.4c.8-.2 1.5-.9 1.7-1.7.4-1.5.4-4.7.4-4.7ZM10 15V9l5.2 3L10 15Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3>Atendimento</h3>
+        <ul>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#doencas">Doenças</a></li>
+          <li><a href="#diagnostico">Exames</a></li>
+          <li><a href="#kids">Retina Kids</a></li>
+          <li><a href="https://retina.pro.br/atendimento-domiciliar" target="_blank" rel="noopener">Atendimento domiciliar</a></li>
+          <li><a href="https://retina.pro.br/area-medica" target="_blank" rel="noopener">Área médica</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="https://retina.pro.br/ensino-e-pesquisa" target="_blank" rel="noopener">Ensino e pesquisa</a></li>
+          <li><a href="https://retina.pro.br/fellowship" target="_blank" rel="noopener">Fellowship</a></li>
+          <li><a href="https://retina.pro.br/codigo-de-confianca" target="_blank" rel="noopener">Código de confiança</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contato rápido</h3>
+        <ul>
+          <li><a href="tel:+551140047821">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+            (11) 4004-7821</a></li>
+          <li><a href="mailto:clinica@retina.com.br">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            clinica@retina.com.br</a></li>
+          <li><a href="#unidades">Unidade Estados Unidos</a></li>
+          <li><a href="#unidades">Unidade Gabriel</a></li>
+          <li><a href="https://retinaclinic.eyeimages.com.br/resultados/exames/login.php" target="_blank" rel="noopener">Resultado de exames</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__mark" aria-hidden="true">retina clinic</p>
+
+    <div class="footer__bottom">
+      <p class="micro" style="color:var(--text-inverse-mut)">
+        © <span id="ano">2026</span> Retina Clinic. Todos os direitos reservados.
+        Diretor técnico responsável — CRM-SP 77307.
+      </p>
+      <p class="micro">
+        <a class="link" href="https://retina.pro.br/politica-de-privacidade" target="_blank" rel="noopener">Política de privacidade</a>
+      </p>
+    </div>
+
+    <p class="micro" style="color:rgba(255,255,255,.35);margin-top:var(--sp-4)">
+      Motion effects derived from
+      <a class="link" href="https://github.com/DavidHDev/vue-bits" target="_blank" rel="noopener" style="color:rgba(255,255,255,.55)">vue-bits</a>
+      by DavidHDev (MIT).
+    </p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/551140047821" target="_blank" rel="noopener" aria-label="Falar com a Retina Clinic pelo WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1s-.6.8-.7 1c-.1.1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3a3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7a10 10 0 0 0 3.9 3.4c1.4.6 2 .6 2.7.5.4 0 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1 0-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
